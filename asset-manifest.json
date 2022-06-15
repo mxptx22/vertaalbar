@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/vertaalbar/static/css/main.f6025b96.css",
+    "main.js": "/vertaalbar/static/js/main.9df643fe.js",
+    "static/media/es.svg": "/vertaalbar/static/media/es.36cdd00d34fa3ab9d98aba66d3ac5b39.svg",
+    "static/media/pt.svg": "/vertaalbar/static/media/pt.96475126e7232ee3558e6fd593a37bec.svg",
+    "index.html": "/vertaalbar/index.html",
+    "static/media/tr.svg": "/vertaalbar/static/media/tr.a1a28a5eb8eceaad90b38395a1000ff3.svg",
+    "static/media/en.svg": "/vertaalbar/static/media/en.516897fd3988e35032b772b026a19f75.svg",
+    "static/media/fr.svg": "/vertaalbar/static/media/fr.b377e77885d6a93660dcaf59f68ab2af.svg",
+    "static/media/it.svg": "/vertaalbar/static/media/it.08db2cd122d5f99494dd35c2cfb10784.svg",
+    "static/media/ru.svg": "/vertaalbar/static/media/ru.7e04b988972d41f5c36902a31b818119.svg",
+    "static/media/de.svg": "/vertaalbar/static/media/de.4d811e50b1fc49d4ce30e618fb575b3a.svg",
+    "static/media/nl.svg": "/vertaalbar/static/media/nl.cfe72ae0b3d6d848523400f70f59efe7.svg",
+    "static/media/sv.svg": "/vertaalbar/static/media/sv.369f685ebb83712ce954eac60af580b7.svg",
+    "main.f6025b96.css.map": "/vertaalbar/static/css/main.f6025b96.css.map",
+    "main.9df643fe.js.map": "/vertaalbar/static/js/main.9df643fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6025b96.css",
+    "static/js/main.9df643fe.js"
+  ]
+}
