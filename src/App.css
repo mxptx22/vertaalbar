@@ -1,38 +1,317 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(49, 49, 49);
+  transition: background-image 2s;
+}
+
+@media screen and (max-width: 600px) {
+  body{font-size: 0.7rem};
+  .cardTitle{margin-left: 0 !important;}
+  #mainwindow {width: 100vw !important}
+
+}
+@media screen and (min-width: 600px) {
+  body{font-size: 1rem}
+}
+
+@media (prefers-color-scheme: dark) {
+  .daytime-scheme   { background:  #333 }
+  .daytime-scheme-2   { background:  rgba(51, 51, 51, 0.7) }
+  body { color: rgb(241, 241, 241); }
+}
+
+@media (prefers-color-scheme: light) {
+  .daytime-scheme   { background:  rgb(255, 255, 255) }
+  .daytime-scheme-2   { background:  rgb(255, 255, 255, 0.7) }
+  body { color: rgb(49, 49, 49); }
+}
+
+@keyframes mainWindowSlideUp {
+  0% {opacity: 0; transform: translateY(100%)}
+  100% {opacity: 1; transform: translateY(0%)}
+}
+
+@keyframes mainWindowSlideDown {
+  0% {opacity: 1; transform: translateY(0%)}
+  100% {opacity: 0; transform: translateY(100%)}
+}
+
+#mainwindow {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  height:90vh;
+  margin-top:10vh;
+  border-radius:20px 20px 0 0;
+  display: flex; 
+  flex-direction:column;
+  animation-name: mainWindowSlideUp;
+  animation-duration:2s;
+  box-shadow: 0 0 100px -10px black;
+}
+
+#topBar {
+  border-radius:20px 20px 0 0;
+  height:7%;
+  flex-grow: 1;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:1em;
+  flex-wrap: wrap;
+  box-shadow: 0 5px 19px;
+}
+
+.languagePicture {
+  background-color: gainsboro;
+  height: 3.5ch;
+  width:3.5ch;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 3.5ch;
+}
+
+.languageNameHeader {
+  font-size:1.3em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+#middleSection {
+  height:78%;
+  padding: 1vw;
+  flex-grow: 1;
+  overflow: auto;
+}
+#bottomSection {
+  border-bottom: 1px solid gray;
+  box-shadow: 0 5px 19px;
+  max-height:15%;
+  flex-grow: 1;
+  display: flex;
+}
+
+.messageInput {
+  width:100%;
+}
+
+textarea[name="messageInputArea"] {
+  resize: none;
+  margin: auto;
+  border-radius: 20px;
+  padding: 10px 10px 10px 10px;
+  font-size: 1em;
+}
+
+.sendButton {
+  border-radius: 50px;
+  height:fit-content;
+  padding:1em;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  place-self: center;
+  border: none;
+  margin-left: 1em;
+  margin-right: 1em;
+  min-width: 14ch;
+  cursor: pointer;
+}
+
+#messageContainer {
+  display:flex;
+  flex-direction: column;
+
+}
+
+.rightMessageBubbleStyling {
+  display: flex;
+  margin:8px;
+  padding:12px;
+  width: max-content;
+  max-width:80%;
+  border-radius: 8px;
+  align-self: flex-end;
+}
+
+.leftMessageBubbleStyling {
+  display: flex;
+  margin:8px;
+  padding:12px;
+  width: max-content;
+  max-width:80%;
+  border-radius: 8px;
+  align-self: flex-start;
+}
+
+.rightMessageBubbleStyling {
+  display: flex;
+  margin:8px;
+  padding:12px;
+  width: max-content;
+  max-width:80%;
+  border-radius: 8px;
+  align-self: flex-end;
+}
+
+.messageBubbleStyling {
+  display: flex;
+  margin:8px;
+  padding:12px;
+  width: max-content;
+  max-width:80%;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 800px) {
+  .ribbon{margin-right: 0 !important;}
+
+}
+@media screen and (min-width: 800px) {
+}
+
+#cardHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width:100vw;
+
+}
+
+#card2 {
+
+}
+
+#card3 {
+
+}
+
+#accentColourTable {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 2em;
+  gap: 4em
+
+}
+
+.accentColourSelection{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 60px);
+  grid-auto-rows:60px;
+  margin-top: 2em;
+  gap: 2em
+
+}
+
+.colourUnitSquare {
+  border-radius: 15px;
+  transition: border 1s;
+  border: white;
+}
+
+.colourUnitSquare:hover {
+  border: 8px solid rgba(255, 255, 255, 0.5);
+}
+
+.colourUnitSquareSelection {
+  border: 8px solid rgba(255, 255, 255, 0.5);
+  scale:120%;
+}
+
+#cardTitleThree { 
+  font-size:0;
+  transition: all 2s;
+  display: block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes largeCardSlideRightEntry {
+  0% { opacity:0;transform: translateX(-100%); }
+  100% {opacity:1;transform: translateX(0%); }
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@keyframes largeCardDisappearExit {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.largeCard {
+  position: relative;
+  height: 80vh;
+  width:80vw;
+  border-radius: 12px;
+  box-shadow: 0 0 100px -10px black;
+  padding:0 2em 2em 2em;
+  display: block;
+  overflow-y:auto;
+  overflow-x: hidden;
+  overflow-wrap: anywhere;
+  animation-name:largeCardSlideRightEntry;
+  animation-duration: 2s;
+}
+
+.languageCard {
+  border-bottom: 1px solid gray;
+}
+
+.languageTitle {
+  font-size: 1em;
+  text-align: center;
+  text-transform:uppercase;
+  padding-top:1em;
+  padding-bottom:0.6em;
+  font-weight: 200;
+}
+
+#leftLanguages {
+  margin-top:2em;
+  display: grid;
+  gap:2em;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+#rightLanguages {
+  margin-top:2em;
+  display: grid;
+  gap:2em;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));;
+}
+
+.ribbon{ 
+  background-color: crimson;
+  width: 1.75em;
+  font-size: 2.5em;
   color: white;
+  text-align: center;
+  margin-right: 0.75em;
+  transition: all 1s;
+}
+.ribbonTop {
+  display:block;
+  height:1em
 }
 
-.App-link {
-  color: #61dafb;
+.ribbonBottom {
+  display:inline-block;
+  height: 2.5em;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardTitle {
+  display: inline-block;
+  font-size: 2.5em;
 }
