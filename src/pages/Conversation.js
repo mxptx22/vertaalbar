@@ -17,7 +17,14 @@ function Conversation() {
     const {conversation, setConversation} = useContext(PageContext)
     const {screen, setScreen} = useContext(PageContext)
     const messageContainerRef = useRef()
-    const scrollToRef = (ref) => ref.current.scrollIntoView({block: "end"})   
+    const scrollToRef = (ref) => ref.current.scrollIntoView({ block: "end" })   
+  const [newHeightValue, setNewHeightValue] = useState('')
+  
+  useEffect(() => {
+    setNewHeightValue(window.innerHeight)
+    window.onresize = setNewHeightValue(window.innerHeight);
+
+  }, []);
 
     useEffect(() => {
       scrollToRef(messageContainerRef)
@@ -95,7 +102,7 @@ function Conversation() {
     <>
     
     <div id="space">
-    <div id="mainwindow">
+    <div id="mainwindow" style={{height:newHeightValue*0.9, animationName:'mainWindowSlideUp'}}>
         <div id="topBar" className="daytime-scheme" style={{position:'relative'}}>
           {/* <div style={{position:'absolute', left:'0', color:'red'}} onClick={()=>{setScreen('Five')}}>◀</div> */}
           <div style={{position:'absolute', left:'0%', marginLeft:'1em', cursor:'pointer', fontSize:'2.50em'}} onClick={()=>{setScreen('Five')}}>◀</div>

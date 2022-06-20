@@ -50,7 +50,9 @@ function Config3() {
     if (leftAccentColour !== null && rightAccentColour !== null) {
       refRibbon1.current.style.width = '100%'; 
       refRibbon1.current.style.backgroundColor = 'limegreen'; 
+      refRibbon1.current.style.cursor = 'pointer'; 
       refRibbon2.current.style.backgroundColor = 'limegreen'; 
+      refRibbon2.current.style.cursor = 'pointer'; 
       refRibbon2.current.style.width = '100%'; 
       refRibbon1.current.scrollIntoView({behavior: "smooth"})
       setRibbonIndicator('➔')}

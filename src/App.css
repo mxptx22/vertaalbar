@@ -14,7 +14,7 @@ body {
 @media screen and (max-width: 600px) {
   body{font-size: 0.7rem};
   .cardTitle{margin-left: 0 !important;}
-  #mainwindow {width: 100vw !important}
+  #mainwindow {width: 100vw !important; margin-left: 0 !important; margin-right: 0 !important;}
 
 }
 @media screen and (min-width: 600px) {
@@ -44,16 +44,13 @@ body {
 }
 
 #mainwindow {
-  width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
   margin-bottom: 0;
-  height:90vh;
-  margin-top:10vh;
   border-radius:20px 20px 0 0;
   display: flex; 
   flex-direction:column;
-  animation-name: mainWindowSlideUp;
   animation-duration:2s;
   box-shadow: 0 0 100px -10px black;
 }
@@ -128,6 +125,11 @@ textarea[name="messageInputArea"] {
   margin-right: 1em;
   min-width: 14ch;
   cursor: pointer;
+  transition: all 1s;
+}
+
+.sendButton:hover {
+  border: 0.5ch solid rgba(0, 0, 0, 0.2);
 }
 
 #messageContainer {
@@ -186,7 +188,7 @@ textarea[name="messageInputArea"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   width:100vw;
 
 }
@@ -220,6 +222,7 @@ textarea[name="messageInputArea"] {
   border-radius: 15px;
   transition: border 1s;
   border: white;
+  cursor: pointer;
 }
 
 .colourUnitSquare:hover {
@@ -251,7 +254,7 @@ textarea[name="messageInputArea"] {
 
 .largeCard {
   position: relative;
-  height: 80vh;
+  height: 80%;
   width:80vw;
   border-radius: 12px;
   box-shadow: 0 0 100px -10px black;
@@ -266,6 +269,7 @@ textarea[name="messageInputArea"] {
 
 .languageCard {
   border-bottom: 1px solid gray;
+  cursor: pointer;
 }
 
 .languageTitle {

@@ -8,12 +8,13 @@ import PageContext from '../PageContext'
 
 
 function Config() {
+  const properHeight = window.innerHeight;
     const [configPage, setConfigPage] = useState('One')
     const {screen} = useContext(PageContext)
     console.log(screen)
   return (
     <>
-        <div id="cardHolder">
+        <div id="cardHolder" style={{height: properHeight}}>
           
           {screen === 'One' && <Config1 />}
           {screen === 'Two' && <Config2 />}
