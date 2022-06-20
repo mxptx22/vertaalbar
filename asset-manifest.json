@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vertaalbar/static/css/main.032959e1.css",
-    "main.js": "/vertaalbar/static/js/main.b12a4755.js",
+    "main.js": "/vertaalbar/static/js/main.c9b64972.js",
     "static/media/es.svg": "/vertaalbar/static/media/es.36cdd00d34fa3ab9d98aba66d3ac5b39.svg",
     "static/media/pt.svg": "/vertaalbar/static/media/pt.96475126e7232ee3558e6fd593a37bec.svg",
     "index.html": "/vertaalbar/index.html",
@@ -14,10 +14,10 @@
     "static/media/nl.svg": "/vertaalbar/static/media/nl.cfe72ae0b3d6d848523400f70f59efe7.svg",
     "static/media/sv.svg": "/vertaalbar/static/media/sv.369f685ebb83712ce954eac60af580b7.svg",
     "main.032959e1.css.map": "/vertaalbar/static/css/main.032959e1.css.map",
-    "main.b12a4755.js.map": "/vertaalbar/static/js/main.b12a4755.js.map"
+    "main.c9b64972.js.map": "/vertaalbar/static/js/main.c9b64972.js.map"
   },
   "entrypoints": [
     "static/css/main.032959e1.css",
-    "static/js/main.b12a4755.js"
+    "static/js/main.c9b64972.js"
   ]
 }
