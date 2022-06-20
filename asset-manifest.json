@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/vertaalbar/static/css/main.1512b5bc.css",
+    "main.css": "/vertaalbar/static/css/main.7378a62c.css",
     "main.js": "/vertaalbar/static/js/main.b12a4755.js",
     "static/media/es.svg": "/vertaalbar/static/media/es.36cdd00d34fa3ab9d98aba66d3ac5b39.svg",
     "static/media/pt.svg": "/vertaalbar/static/media/pt.96475126e7232ee3558e6fd593a37bec.svg",
@@ -13,11 +13,11 @@
     "static/media/de.svg": "/vertaalbar/static/media/de.4d811e50b1fc49d4ce30e618fb575b3a.svg",
     "static/media/nl.svg": "/vertaalbar/static/media/nl.cfe72ae0b3d6d848523400f70f59efe7.svg",
     "static/media/sv.svg": "/vertaalbar/static/media/sv.369f685ebb83712ce954eac60af580b7.svg",
-    "main.1512b5bc.css.map": "/vertaalbar/static/css/main.1512b5bc.css.map",
+    "main.7378a62c.css.map": "/vertaalbar/static/css/main.7378a62c.css.map",
     "main.b12a4755.js.map": "/vertaalbar/static/js/main.b12a4755.js.map"
   },
   "entrypoints": [
-    "static/css/main.1512b5bc.css",
+    "static/css/main.7378a62c.css",
     "static/js/main.b12a4755.js"
   ]
 }
